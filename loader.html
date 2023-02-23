@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> trans & loading</title>
+	<style>
+		*{margin: 0 ;padding: 0;border: 0}
+		@keyframes mahdi
+		{
+			from{ transform: scale(4); }
+			to { transform: scale(1); }
+		}
+
+		#a1
+		{
+			width: 128px;height:128px ;position: relative;
+			margin: 100px auto;
+		}
+		.cir
+	    {
+	    	background:linear-gradient(90deg,red,white) ;
+	    	width: 10px ;
+	    	height: 10px;
+	    	border-radius: 50% ;
+	    	position: absolute;
+
+	    	animation-name: mahdi;
+	    	animation-duration: 0.64s;
+	    	animation-iteration-count: infinite;
+		}
+		#cir1 { left:0px;top:52px; animation-delay: 0.08s}
+		#cir2 { left:15px;top:15px;animation-delay: 0.16s}
+		#cir3 { top:-5px;left:57px;animation-delay: 0.24s}
+		#cir4 { right:22px;top:14px;animation-delay: 0.32s}
+		#cir5 { right:3px;top:53px;animation-delay: 0.40s}
+		#cir6 { right:22px;bottom:25px;animation-delay: 0.48s}
+		#cir7 { left:55px;bottom:10px;animation-delay: 0.58s}
+		#cir8 { left:15px;bottom:28px;animation-delay: 0.64s}
+	</style>
+
+</head>
+<body>
+	<div id="a1">
+		<div id="cir1"class="cir"></div>
+		<div id="cir2"class="cir"></div>
+		<div id="cir3"class="cir"></div>
+		<div id="cir4"class="cir"></div>
+		<div id="cir5"class="cir"></div>
+		<div id="cir6"class="cir"></div>
+		<div id="cir7"class="cir"></div>
+		<div id="cir8"class="cir"></div>
+	</div>
+</body>
+</html>
